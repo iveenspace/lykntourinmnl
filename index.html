@@ -371,7 +371,7 @@
                     </div>
                     
                     <!-- LYKN Group Photo -->
-                    <div class="lykn-group-photo mb-8" style="width: 1000px; height: 1200px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <div class="lykn-group-photo mb-12" style="width: 600px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                         <img id="lyknGroupPhoto" src="./lykn-group.jpg" alt="LYKN Group" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
                     
@@ -382,7 +382,7 @@
                     <div class="photostrip-footer">
                         <p class="text-xs text-gray-400">MEMORIES FROM THE CONCERT</p>
                         <p class="text-[10px] text-gray-600 mt-1">© LYKN UNLEASHED TOUR 2025</p>
-                        <p class="text-[10px] text-gray-600 mt-2">iveen_space</p>
+                        <p class="text-[10px] text-gray-600">iveen_space</p>
                     </div>
                 </div>
                 
@@ -669,7 +669,7 @@
                     statusMessage.textContent = "Generating photostrip...";
                     
                     const stripWidth = 600;
-                    const stripHeight = 1200;
+                    const stripHeight = 1000;
                     
                     photoStripCanvas.width = stripWidth;
                     photoStripCanvas.height = stripHeight;
@@ -791,9 +791,9 @@
                     drawMembersArea();
                     
                     // Photo slots - clean layout matching reference
-                    const photoStartY = 400;
+                    const photoStartY = 350;
                     const photoWidth = stripWidth - 60; // More padding for cleaner look
-                    const photoHeight = 180; // Increased height for better fit
+                    const photoHeight = 140; // Reduced height for new size
                     const photoSpacing = 20; // Tighter spacing
                     const photoX = 30; // Centered positioning
                     
