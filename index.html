@@ -371,7 +371,7 @@
                     </div>
                     
                     <!-- LYKN Group Photo -->
-                    <div class="lykn-group-photo mb-12" style="width: 390px; height: 180px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <div class="lykn-group-photo mb-12" style="width: 400px; height:  200px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                         <img id="lyknGroupPhoto" src="./lykn-group.jpg" alt="LYKN Group" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                    
                     </div>
@@ -672,7 +672,7 @@
                     statusMessage.textContent = "Generating photostrip...";
                     
                     const stripWidth = 450;
-                    const stripHeight = 1350;
+                    const stripHeight = 1500;
                     
                     photoStripCanvas.width = stripWidth;
                     photoStripCanvas.height = stripHeight;
@@ -747,8 +747,8 @@
                     ctx.fillText('IN MANILA', stripWidth / 2, 185);
                     
                     // Add the LYKN group photo area
-                    const membersAreaY = 425;
-                    const membersAreaHeight = 180;
+                    const membersAreaY = 450;
+                    const membersAreaHeight = 200;
                     
                     // Try to load and draw the LYKN group photo
                     const lyknImg = new Image();
@@ -794,7 +794,7 @@
                     drawMembersArea();
                     
                     // Photo slots - clean layout matching reference
-                    const photoStartY = 500;
+                    const photoStartY = 600;
                     const photoWidth = 390; // Updated width as requested
                     const photoHeight = 220; // Height remains the same
                     const photoSpacing = 35; // Updated spacing as requested
